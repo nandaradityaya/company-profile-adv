@@ -7,11 +7,10 @@
     <title>AdvantageSCM | BeprocureIT</title>
     <!-- fav icon -->
     <link
-      href="assets/images/favicon.png"
+      href="assets/images/logo-qr-adv.gif"
       rel="shortcut icon"
       type="image/png"
     />
-
     <!-- Bootstrap -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- animated-css -->
@@ -77,13 +76,13 @@
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               <li>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
               </li>
 
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-              <li class="active"><a href="#">Contact Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#aboutAdv">About</a></li>
+              <li class="active"><a href="career.html">Careers</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li class="me-2"><a href="#">ID</a></li>
               <li class="me-2 divider-languange">|</li>
               <li class="me-2"><a href="#">EN</a></li>
@@ -117,9 +116,9 @@
                   <div class="selector dropdown">
                     <select name="one" class="dropdown-select searchBar">
                       <option value="">Department</option>
-                      <option value="1">Department One</option>
-                      <option value="2">Department Two</option>
-                      <option value="3">Department Three</option>
+                      <option value="1">Information Technology</option>
+                      <option value="2">Human Resource</option>
+                      <option value="3">Marketing</option>
                     </select>
                   </div>
                 </div>
@@ -127,10 +126,10 @@
                 <div class="col-sm-6">
                   <div class="selector dropdown">
                     <select name="one" class="dropdown-select searchBar">
-                      <option value="">Position</option>
-                      <option value="1">Position One</option>
-                      <option value="2">Position Two</option>
-                      <option value="3">Position Three</option>
+                      <option value="">Level</option>
+                      <option value="1">All</option>
+                      <option value="1">Fresh Graduate</option>
+                      <option value="2">Professional</option>
                     </select>
                   </div>
                 </div>
@@ -143,77 +142,145 @@
           <div class="col-12 col-md-4 mb-3">
             <div class="card">
               <div style="padding: 24px">
-                <h5 class="mb-2 font-16 weight-600">Product Designer</h5>
+                <h5 class="mb-2 font-20 weight-600">Product Designer</h5>
                 <div class="left-content">
                   <span class="small">Information Technology</span>
 
-                  <div class="d-flex">
-                    <i class="bx bx-current-location"></i>
-                    <h6>Jakarta</h6>
+                  <div class="d-flex gap-1 align-items-center mt-3 mb-3">
+                    <img
+                      src="assets/images/icon/ic_location.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Jakarta</h6>
                   </div>
-
+                  <div class="d-flex gap-1 align-items-center mb-4">
+                    <img
+                      src="assets/images/icon/ic_timer.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Apply Deadline : 12 June 2024</h6>
+                  </div>
+                  <hr />
                   <div
-                    class="d-flex align-items-center gap-2 justify-content-between"
+                    class="d-flex align-items-center gap-1 justify-content-between mt-3"
                   >
-                    <button class="btn btn-white">View Detail</button>
-                    <button class="btn btn-primary">Apply Now</button>
+                    <a href="#" type="button" class="btn btn-white"
+                      >See Detail</a
+                    >
+                    <button class="btn btn-primary">Apply</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mb-3">test</div>
-          <div class="col-12 col-md-4 mb-3">test</div>
-        </div>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+              <div style="padding: 24px">
+                <h5 class="mb-2 font-20 weight-600">Talent Aqcuisition</h5>
+                <div class="left-content">
+                  <span class="small">HRGA</span>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="left-content">
-              <h4>International Communications Manager</h4>
-              <span class="small">Marketing, PR & Communications</span>
-
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <button class="btn btn-primary">Apply Now</button>
+                  <div class="d-flex gap-1 align-items-center mt-3 mb-3">
+                    <img
+                      src="assets/images/icon/ic_location.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Jakarta</h6>
+                  </div>
+                  <div class="d-flex gap-1 align-items-center mb-4">
+                    <img
+                      src="assets/images/icon/ic_timer.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Apply Deadline : 12 June 2024</h6>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex align-items-center gap-1 justify-content-between mt-3"
+                  >
+                    <a href="#" type="button" class="btn btn-white"
+                      >See Detail</a
+                    >
+                    <button class="btn btn-primary">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+              <div style="padding: 24px">
+                <h5 class="mb-2 font-20 weight-600">PR Specialists</h5>
+                <div class="left-content">
+                  <span class="small">Marketing</span>
 
-            <div class="left-content">
-              <h4>PR Specialists</h4>
-              <span class="small">Marketing, PR & Communications</span>
-
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <button class="btn btn-primary">Apply Now</button>
+                  <div class="d-flex gap-1 align-items-center mt-3 mb-3">
+                    <img
+                      src="assets/images/icon/ic_location.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Bali</h6>
+                  </div>
+                  <div class="d-flex gap-1 align-items-center mb-4">
+                    <img
+                      src="assets/images/icon/ic_timer.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Apply Deadline : 12 June 2024</h6>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex align-items-center gap-1 justify-content-between mt-3"
+                  >
+                    <a href="#" type="button" class="btn btn-white"
+                      >See Detail</a
+                    >
+                    <button class="btn btn-primary">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+              <div style="padding: 24px">
+                <h5 class="mb-2 font-20 weight-600">Driver</h5>
+                <div class="left-content">
+                  <span class="small">Operational</span>
 
-            <div class="left-content">
-              <h4>Marketing Intern</h4>
-              <span class="small">Marketing, Product Management</span>
-
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <button class="btn btn-primary">Apply Now</button>
-            </div>
-
-            <div class="left-content">
-              <h4>Account Manager Strategic Partnership</h4>
-              <span class="small">Marketing, Startegic Partnership</span>
-
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <button class="btn btn-primary">Apply Now</button>
+                  <div class="d-flex gap-1 align-items-center mt-3 mb-3">
+                    <img
+                      src="assets/images/icon/ic_location.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Bandung</h6>
+                  </div>
+                  <div class="d-flex gap-1 align-items-center mb-4">
+                    <img
+                      src="assets/images/icon/ic_timer.svg"
+                      alt="location"
+                      width="16"
+                    />
+                    <h6 class="mb-0">Apply Deadline : 12 June 2024</h6>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex align-items-center gap-1 justify-content-between mt-3"
+                  >
+                    <a href="#" type="button" class="btn btn-white"
+                      >See Detail</a
+                    >
+                    <button class="btn btn-primary">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
