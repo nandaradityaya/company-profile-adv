@@ -2466,16 +2466,16 @@ select {
 }
 @media only screen and (max-width: 767px) {
   .slider-section #rev_slider_5 .font-medium {
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 25px !important;
     margin: 0 0 9px !important;
   }
 }
 @media only screen and (max-width: 479px) {
   .slider-section #rev_slider_5 .font-medium {
-    font-size: 14px !important;
+    font-size: 12px !important;
     line-height: 18px !important;
-    margin: 30px 0 9px !important;
+    margin: 38px 0 9px !important;
   }
 }
 .slider-section #rev_slider_5 .btn {
@@ -2848,6 +2848,10 @@ select {
   .counting-section .counting-pusher .counting-wrapper .content {
     margin: 5px 0 0 65px;
   }
+}
+.counting-wrapper {
+  position: relative;
+  z-index: 1000 !important;
 }
 .counting-section
   .counting-pusher
@@ -8859,6 +8863,16 @@ select {
   color: #0d1d36;
 }
 
+.subPage
+  .header-section
+  .navbar
+  .navbar-collapse
+  .navbar-nav
+  .divider-languange {
+  line-height: 90px;
+  color: #0d1d36;
+}
+
 .homePageFive
   .header-section
   .navbar
@@ -8928,7 +8942,7 @@ select {
 }
 .homePageFive .service-section {
   background-color: #ffffff;
-  padding-bottom: 220px;
+  /* padding-bottom: 220px; */
 }
 @media only screen and (max-width: 991px) {
   .homePageFive .service-section {
@@ -10981,4 +10995,15 @@ select {
   line-height: 24px;
   color: #004994;
   margin-bottom: 20px;
+}
+
+@media (max-width: 560px) {
+  #rev_slider_5 .tp-caption {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.section-padding-custom {
+  padding: 135px 0px;
 }

@@ -1034,6 +1034,9 @@
   font-size: 14px;
 }
 
+.font-16 {
+  font-size: 16px;
+}
 .font-18 {
   font-size: 18px;
 }
@@ -3932,4 +3935,17 @@
   .d-flex-sm {
     display: block;
   }
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-500 {
+  font-weight: 500;
 }
