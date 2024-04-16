@@ -1,20 +1,5 @@
-/* -------------------------------------------------------------
-  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
-  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
-
-  List of CSS3 Sass Mixins File to be @imported and @included as you need
-
-  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
-  ENDING css files
-
-  note: All CSS3 Properties are being supported by Safari 5
-  more info: http://www.findmebyip.com/litmus/#css3-properties
-
-------------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
-/* =========================================================
-        General
-============================================================ */
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -1352,7 +1337,7 @@ select {
 .header-section .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
   top: 55px;
   left: -25px;
-  min-width: 200px;
+  min-width: 250px;
   background-color: #ffffff;
   padding: 10px 0;
   display: block;
@@ -2851,7 +2836,7 @@ select {
 }
 .counting-wrapper {
   position: relative;
-  z-index: 1000 !important;
+  z-index: 10 !important;
 }
 .counting-section
   .counting-pusher
@@ -8831,7 +8816,10 @@ select {
   color: #ffffff;
   /* color: #0d1d36; */
 }
-.homePageFive .header-section .navbar.sticky .navbar-collapse .navbar-nav li a,
+.homePageFive .header-section .navbar.sticky .navbar-collapse .navbar-nav li a {
+  color: #0d1d36;
+}
+
 .homePageFive
   .header-section
   .navbar.sticky
@@ -11006,4 +10994,12 @@ select {
 
 .section-padding-custom {
   padding: 135px 0px;
+}
+
+.service-section .service-wrapper img {
+  position: relative;
+  font-size: 24px;
+  color: #004994;
+  float: left;
+  z-index: 5;
 }
