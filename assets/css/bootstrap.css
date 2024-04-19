@@ -1073,12 +1073,19 @@
   border-radius: 30px;
 }
 
+.radius-8 {
+  border-radius: 8px;
+}
+
 .radius-10 {
   border-radius: 10px;
 }
 
 .radius-15 {
   border-radius: 15px;
+}
+.radius-16 {
+  border-radius: 16px;
 }
 
 .cursor-pointer {
@@ -3948,4 +3955,28 @@
 
 .weight-500 {
   font-weight: 500;
+}
+
+/* .modal-lg,
+.modal-xl {
+  width: 1200px;
+} */
+
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-lg,
+  .modal-xl {
+    width: 1200px;
+  }
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
 }
