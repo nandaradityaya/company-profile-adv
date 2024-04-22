@@ -1053,6 +1053,10 @@
   font-size: 24px;
 }
 
+.font-28 {
+  font-size: 28px;
+}
+
 .font-30 {
   font-size: 30px;
 }
@@ -3979,4 +3983,12 @@
   display: flex;
   align-items: center;
   min-height: calc(100% - 1rem);
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #1d1d1d !important;
 }

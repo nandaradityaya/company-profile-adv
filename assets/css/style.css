@@ -6120,7 +6120,7 @@ select {
   z-index: 5;
 }
 .finance-service-section .finance-carousel .finance-wrapper .icon img {
-  width: auto;
+  /* width: auto; */
   padding: 15px 0;
   margin: 0 auto;
 }
@@ -6129,7 +6129,7 @@ select {
   .finance-wrapper
   .wrapper-content
   h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   margin: -17px 0 7px;
@@ -6148,7 +6148,7 @@ select {
   .wrapper-content
   h4
   a:hover {
-  color: #004994;
+  color: #ffffff !important;
 }
 .finance-service-section .finance-carousel .finance-wrapper .wrapper-content p {
   font-size: 14px;
@@ -6240,7 +6240,7 @@ select {
   border: 2px solid #004994;
   background: transparent;
   padding: 0;
-  border-radius: 0;
+  border-radius: 100%;
   -webkit-transition: 0.5s;
   -khtml-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -7232,10 +7232,20 @@ select {
         Video-Section STYLE 
 ============================================================ */
 .video-section {
+  position: relative;
   background: url(../images/video-bg.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   padding: 170px 0;
+}
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 @media only screen and (max-width: 991px) {
   .video-section {
@@ -7255,6 +7265,9 @@ select {
   font-size: 30px;
   color: #ffffff;
   background: #004994;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
 }
 @media only screen and (max-width: 991px) {
   .video-section .video-icon i {
@@ -9189,7 +9202,7 @@ select {
   left: 0;
   width: 100%;
   height: 25%;
-  background: #092a48;
+  background: #004994;
   opacity: 0;
   z-index: 1;
   -webkit-transition: all 0.35s ease;
@@ -11002,4 +11015,30 @@ select {
   color: #004994;
   float: left;
   z-index: 5;
+}
+
+.vision-adv:nth-child(1) {
+  border-top-left-radius: 10px; /* Radius sudut atas kiri pada kolom pertama */
+  border-bottom-left-radius: 10px; /* Radius sudut bawah kiri pada kolom pertama */
+}
+
+.mision-adv:nth-child(2) {
+  border-top-right-radius: 10px; /* Radius sudut atas kanan pada kolom kedua */
+  border-bottom-right-radius: 10px; /* Radius sudut bawah kanan pada kolom kedua */
+}
+
+@media (max-width: 992px) {
+  .vision-adv:nth-child(1) {
+      border-top-left-radius: 10px; /* Radius sudut atas kiri pada kolom pertama */
+      border-top-right-radius: 10px; /* Radius sudut atas kanan pada kolom pertama */
+      border-bottom-right-radius: 0; /* Menghapus radius sudut bawah kanan pada kolom pertama */
+      border-bottom-left-radius: 0; /* Menghapus radius sudut bawah kanan pada kolom pertama */
+  }
+
+  .mision-adv:nth-child(2) {
+      border-bottom-left-radius: 10px; /* Radius sudut bawah kiri pada kolom kedua */
+      border-top-left-radius: 0; /* Menghapus radius sudut atas kiri pada kolom kedua */
+      border-top-right-radius: 0; /* Menghapus radius sudut atas kiri pada kolom kedua */
+      border-bottom-right-radius: 10px; /* Radius sudut bawah kanan pada kolom kedua */
+  }
 }
