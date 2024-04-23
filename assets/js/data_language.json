@@ -1,0 +1,24 @@
+{
+  "EN": {
+    "navHome": "Home",
+    "navService": "Service",
+    "navAbout": "About Us",
+    "navCareer": "Careers",
+    "navContact": "Contact Us",
+    "aboutAdv": "About Advantage",
+    "titleOne": "FAST",
+    "btnAboutUs": "About Us",
+    "btnContactUs": "Contact"
+  },
+  "ID": {
+    "navHome": "Beranda",
+    "navService": "Layanan",
+    "navAbout": "Tentang",
+    "navCareer": "Karir",
+    "navContact": "Kontak",
+    "aboutAdv": "Tentang Advantage",
+    "titleOne": "CEPAT",
+    "btnAboutUs": "Tentang Kami",
+    "btnContactUs": "Kontak"
+  }
+}

@@ -70,19 +70,20 @@
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html"
-              ><img src="assets/images/logo-adv.png" alt="image" width="200"
+              ><img src="assets/images/logo-adv-2.png" alt="image" width="180"
             /></a>
           </div>
 
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               <li class="active">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="navHome">Home</a>
               </li>
 
               <li class="dropdown">
                 <a href="#"
-                  >Services <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ><span class="navService">Services</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
                   <li>
@@ -96,7 +97,8 @@
               </li>
               <li class="dropdown">
                 <a href="about-us.html"
-                  >About Us <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ><span class="navAbout">About Us</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
                   <li><a href="about-us.html">About Advantage SCM</a></li>
@@ -107,20 +109,24 @@
                   <li><a href="#">Affiliate Companies</a></li>
                 </ul>
               </li>
-              <li><a href="career.html">Careers</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li class="me-2"><a href="#">ID</a></li>
+              <li><a href="career.html" class="navCareer">Careers</a></li>
+              <li><a href="contact.html" class="navContact">Contact Us</a></li>
+              <li class="me-2 language-list">
+                <a href="#" data-lang="ID">ID</a>
+              </li>
               <li class="me-2 divider-languange">|</li>
-              <li class="me-2"><a href="#">EN</a></li>
+              <li class="me-2 language-list active">
+                <a href="#" data-lang="EN">EN</a>
+              </li>
             </ul>
 
             <!-- <ul class="nav navbar-nav navbar-right">
-                      <li>
-                        <a href="#"
-                          ><img src="assets/images/user-2.png" alt="" />Login</a
-                        >
-                      </li>
-                    </ul> -->
+              <li>
+                <a href="#"
+                  ><img src="assets/images/user-2.png" alt="" />Login</a
+                >
+              </li>
+            </ul> -->
           </div>
         </div>
       </nav>
@@ -868,6 +874,7 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/dist/aos.js"></script>
+    <script src="assets/js/switchLang.js"></script>
 
     <script>
       $(document).on("ready", function () {
