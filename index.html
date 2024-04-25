@@ -84,12 +84,14 @@
                 ></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">Cash Replenishment</a>
+                    <a href="#" class="navCR">Cash Replenishment</a>
                   </li>
-                  <li><a href="#">Cash Processing Center</a></li>
-                  <li><a href="#">Cash in Transit</a></li>
-                  <li><a href="#">First Level Maintenance</a></li>
-                  <li><a href="#">Cargo</a></li>
+                  <li><a href="#" class="navCPC">Cash Processing Center</a></li>
+                  <li><a href="#" class="navCIT">Cash in Transit</a></li>
+                  <li>
+                    <a href="#" class="navFLM">First Level Maintenance</a>
+                  </li>
+                  <li><a href="#" class="navCargo">Cargo</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -98,22 +100,34 @@
                   <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Advantage SCM</a></li>
                   <li>
-                    <a href="company-management.html">Company Management</a>
+                    <a href="about-us.html" class="navAboutAdv"
+                      >About Advantage SCM</a
+                    >
                   </li>
-                  <li><a href="#">Our Value</a></li>
-                  <li><a href="#">Affiliate Companies</a></li>
+                  <li>
+                    <a
+                      href="company-management.html"
+                      class="navCompanyManagement"
+                      >Company Management</a
+                    >
+                  </li>
+                  <li><a href="#" class="navOurValue">Our Value</a></li>
+                  <li>
+                    <a href="#" class="navAffiliateCompanies"
+                      >Affiliate Companies</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li><a href="career.html" class="navCareer">Careers</a></li>
               <li><a href="contact.html" class="navContact">Contact Us</a></li>
               <li class="me-2 language-list">
-                <a href="#" data-lang="ID">ID</a>
+                <a type="button" data-lang="ID">ID</a>
               </li>
               <li class="me-2 divider-languange">|</li>
-              <li class="me-2 language-list active">
-                <a href="#" data-lang="EN">EN</a>
+              <li class="me-2 language-list">
+                <a type="button" data-lang="EN">EN</a>
               </li>
             </ul>
 
@@ -211,7 +225,7 @@
               />
               <!-- LAYER NR. 2 -->
               <div
-                class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
+                class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 titleTwo"
                 style="margin: 0px !important"
                 data-x="right"
                 data-hoffset="0"
@@ -273,7 +287,7 @@
               />
               <!-- LAYER NR. 2 -->
               <div
-                class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
+                class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 titleThree"
                 data-x="right"
                 data-hoffset="0"
                 data-y="top"
@@ -558,22 +572,26 @@
                   data-aos-duration="1000"
                   data-aos-easing="ease-out"
                 >
-                  Advantage SCM is a national private company engaged in cash
-                  management and services, supported by professional and
-                  experienced staff to provide the best service results to
-                  clients. We have been operating for more than 20 years since
-                  2004 which has enabled us to always provide optimal service.
+                  <span class="descAboutAdvFirst">
+                    Advantage SCM is a national private company engaged in cash
+                    management and services, supported by professional and
+                    experienced staff to provide the best service results to
+                    clients. We have been operating for more than 20 years since
+                    2004 which has enabled us to always provide optimal service.
+                  </span>
                   <br />
                   <br />
-                  Advantage SCM helps the banking industry and sub-clients in
-                  optimizing operational business activities by preventing
-                  duplication of money so as to increase productivity. We always
-                  prioritize partner confidentiality and security.
+                  <span class="descAboutAdvSecond">
+                    Advantage SCM helps the banking industry and sub-clients in
+                    optimizing operational business activities by preventing
+                    duplication of money so as to increase productivity. We
+                    always prioritize partner confidentiality and security.
+                  </span>
                 </p>
 
                 <a
                   href="#"
-                  class="btn btn-primary"
+                  class="btn btn-primary moreAboutUs"
                   data-aos="fade-right"
                   data-aos-delay="200"
                   data-aos-duration="1000"
@@ -594,6 +612,15 @@
                 <video controls="" class="radius-10">
                   <source src="assets/video/video.mp4" type="video/mp4" />
                 </video>
+
+                <!-- if videos from youtube show code below -->
+                <!-- <iframe
+                  width="100%"
+                  height="340"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                  class="radius-10"
+                >
+                </iframe> -->
               </div>
               <!-- video-wrapper -->
             </div>
@@ -620,7 +647,7 @@
                 <span class="timer">36</span
                 ><span class="icon-plus-timer">+</span>
               </div>
-              <p>Branches</p>
+              <p class="branchesLang">Branches</p>
             </div>
           </div>
 
@@ -633,7 +660,7 @@
               <div class="count-description">
                 <span class="timer">19</span>
               </div>
-              <p>Outlets</p>
+              <p class="outletsLang">Outlets</p>
             </div>
           </div>
 
@@ -647,7 +674,7 @@
                 <span class="timer">100</span
                 ><span class="icon-plus-timer">+</span>
               </div>
-              <p>Employees</p>
+              <p class="employeesLang">Employees</p>
             </div>
           </div>
         </div>
@@ -663,7 +690,7 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h2>Achievements</h2>
+          <h2 class="achievementsLang">Achievements</h2>
           <div class="border"></div>
         </div>
         <!-- section-title -->
@@ -684,8 +711,12 @@
               />
 
               <div class="wrapper-content">
-                <h3><a href="#">20+ Years Advantage</a></h3>
-                <p>
+                <h3>
+                  <a href="#" class="titleAchievementsOne"
+                    >20+ Years Advantage</a
+                  >
+                </h3>
+                <p class="subTitleAchievementsOne">
                   Expertise in the field of Cash Supply Chain Management with
                   experience as a PJPUR that is proven to be sustainable
                 </p>
@@ -702,8 +733,10 @@
               />
 
               <div class="wrapper-content">
-                <h3><a href="#">BE Pro CuRe IT</a></h3>
-                <p>
+                <h3>
+                  <a href="#" class="titleAchievementsTwo">BE Pro CuRe IT</a>
+                </h3>
+                <p class="subTitleAchievementsTwo">
                   Brand, Excellent, Professional, Customer Relation, Integrity,
                   Trust
                 </p>
@@ -720,8 +753,12 @@
               />
 
               <div class="wrapper-content">
-                <h3><a href="#">The best PJPUR</a></h3>
-                <p>Bank Indonesia Award as the best PJPUR in 2022</p>
+                <h3>
+                  <a href="#" class="titleAchievementsThree">The best PJPUR</a>
+                </h3>
+                <p class="subTitleAchievementsThree">
+                  Bank Indonesia Award as the best PJPUR in 2022
+                </p>
               </div>
             </div>
           </div>
@@ -739,7 +776,7 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h2>Our Clients</h2>
+          <h2 class="ourClientsLang">Our Clients</h2>
           <div class="border"></div>
         </div>
       </div>
@@ -1023,9 +1060,9 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper">
-                <h3>About</h3>
+                <h3 class="footAbout">About</h3>
 
-                <p>
+                <p class="footDescAbout">
                   PT Advantage SCM ( Advantage ) is a leading cash management
                   company in Indonesia specialized on serving national and
                   multinational banks through its 36 full-branches and 19
@@ -1066,13 +1103,13 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper last-wrapper">
-                <h3>Information</h3>
+                <h3 class="footInformation">Information</h3>
 
                 <ul class="wrapper-option clearfix">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="navHome">Home</a></li>
+                  <li><a href="#" class="navService">Blog</a></li>
+                  <li><a href="#" class="navCareer">Careers</a></li>
+                  <li><a href="#" class="navContact">Contact</a></li>
                 </ul>
                 <!-- wrapper-option -->
               </div>
@@ -1106,42 +1143,50 @@
 
       <ul class="menu-wrapper">
         <li class="active">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="navHome">Home</a>
         </li>
-
-        <li><a href="#">News</a></li>
         <li>
           <a class="dropmenu" href="#"
-            >Services <i class="fa fa-angle-down" aria-hidden="true"></i
+            ><span class="navService">Services</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
           <ul class="dropDown sub-menu">
             <li>
-              <a href="#">Cash Replenishment</a>
+              <a href="#" class="navCR">Cash Replenishment</a>
             </li>
-            <li><a href="#">Cash Processing Center</a></li>
-            <li><a href="#">Cash in Transit</a></li>
-            <li><a href="#">First Level Maintenance</a></li>
-            <li><a href="#">Cargo</a></li>
+            <li><a href="#" class="navCPC">Cash Processing Center</a></li>
+            <li><a href="#" class="navCIT">Cash in Transit</a></li>
+            <li><a href="#" class="navFLM">First Level Maintenance</a></li>
+            <li><a href="#" class="navCargo">Cargo</a></li>
           </ul>
           <!-- end of dropdown -->
         </li>
 
         <li>
           <a class="dropmenu" href="about-us.html"
-            >About Us <i class="fa fa-angle-down" aria-hidden="true"></i
+            ><span class="navAbout">About Us</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
           <ul class="dropDown sub-menu">
-            <li><a href="about-us.html">About Advantage SCM</a></li>
             <li>
-              <a href="company-management.html">Company Management</a>
+              <a href="about-us.html" class="navAboutAdv"
+                >About Advantage SCM</a
+              >
             </li>
-            <li><a href="#">Our Value</a></li>
-            <li><a href="#">Affiliate Companies</a></li>
+            <li>
+              <a href="company-management.html" class="navCompanyManagement"
+                >Company Management</a
+              >
+            </li>
+            <li><a href="#" class="navOurValue">Our Value</a></li>
+            <li>
+              <a href="#" class="navAffiliateCompanies">Affiliate Companies</a>
+            </li>
           </ul>
           <!-- end of dropdown -->
         </li>
-        <li><a href="career.html">Careers</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html" class="navCareer">Careers</a></li>
+        <li><a href="contact.html" class="navContact">Contact Us</a></li>
         <!-- end of li -->
       </ul>
       <!-- menu-wrapper -->

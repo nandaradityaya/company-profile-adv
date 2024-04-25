@@ -69,57 +69,77 @@
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html"
-              ><img src="assets/images/logo-adv.png" alt="image" width="200"
+              ><img src="assets/images/logo-adv-2.png" alt="image" width="180"
             /></a>
           </div>
 
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               <li class="active">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="navHome">Home</a>
               </li>
 
               <li class="dropdown">
                 <a href="#"
-                  >Services <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ><span class="navService">Services</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">Cash Replenishment</a>
+                    <a href="#" class="navCR">Cash Replenishment</a>
                   </li>
-                  <li><a href="#">Cash Processing Center</a></li>
-                  <li><a href="#">Cash in Transit</a></li>
-                  <li><a href="#">First Level Maintenance</a></li>
-                  <li><a href="#">Cargo</a></li>
+                  <li><a href="#" class="navCPC">Cash Processing Center</a></li>
+                  <li><a href="#" class="navCIT">Cash in Transit</a></li>
+                  <li>
+                    <a href="#" class="navFLM">First Level Maintenance</a>
+                  </li>
+                  <li><a href="#" class="navCargo">Cargo</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="about-us.html"
-                  >About Us <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ><span class="navAbout">About Us</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Advantage SCM</a></li>
                   <li>
-                    <a href="company-management.html">Company Management</a>
+                    <a href="about-us.html" class="navAboutAdv"
+                      >About Advantage SCM</a
+                    >
                   </li>
-                  <li><a href="#">Our Value</a></li>
-                  <li><a href="#">Affiliate Companies</a></li>
+                  <li>
+                    <a
+                      href="company-management.html"
+                      class="navCompanyManagement"
+                      >Company Management</a
+                    >
+                  </li>
+                  <li><a href="#" class="navOurValue">Our Value</a></li>
+                  <li>
+                    <a href="#" class="navAffiliateCompanies"
+                      >Affiliate Companies</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li><a href="career.html">Careers</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li class="me-2"><a href="#">ID</a></li>
+              <li><a href="career.html" class="navCareer">Careers</a></li>
+              <li><a href="contact.html" class="navContact">Contact Us</a></li>
+              <li class="me-2 language-list">
+                <a type="button" data-lang="ID">ID</a>
+              </li>
               <li class="me-2 divider-languange">|</li>
-              <li class="me-2"><a href="#">EN</a></li>
+              <li class="me-2 language-list">
+                <a type="button" data-lang="EN">EN</a>
+              </li>
             </ul>
 
             <!-- <ul class="nav navbar-nav navbar-right">
-                      <li>
-                        <a href="#"
-                          ><img src="assets/images/user-2.png" alt="" />Login</a
-                        >
-                      </li>
-                    </ul> -->
+              <li>
+                <a href="#"
+                  ><img src="assets/images/user-2.png" alt="" />Login</a
+                >
+              </li>
+            </ul> -->
           </div>
         </div>
       </nav>
@@ -325,7 +345,11 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper">
-                <img src="assets/images/logo-adv.png" alt="" />
+                <img
+                  src="assets/images/logo-adv-2.png"
+                  alt="logo adv"
+                  width="200"
+                />
 
                 <ul class="location">
                   <li>
@@ -360,9 +384,9 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper">
-                <h3>About</h3>
+                <h3 class="footAbout">About</h3>
 
-                <p>
+                <p class="footDescAbout">
                   PT Advantage SCM ( Advantage ) is a leading cash management
                   company in Indonesia specialized on serving national and
                   multinational banks through its 36 full-branches and 19
@@ -403,13 +427,13 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper last-wrapper">
-                <h3>Information</h3>
+                <h3 class="footInformation">Information</h3>
 
                 <ul class="wrapper-option clearfix">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="navHome">Home</a></li>
+                  <li><a href="#" class="navService">Blog</a></li>
+                  <li><a href="#" class="navCareer">Careers</a></li>
+                  <li><a href="#" class="navContact">Contact</a></li>
                 </ul>
                 <!-- wrapper-option -->
               </div>
@@ -443,42 +467,50 @@
 
       <ul class="menu-wrapper">
         <li class="active">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="navHome">Home</a>
         </li>
-
-        <li><a href="#">News</a></li>
         <li>
           <a class="dropmenu" href="#"
-            >Services <i class="fa fa-angle-down" aria-hidden="true"></i
+            ><span class="navService">Services</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
           <ul class="dropDown sub-menu">
             <li>
-              <a href="#">Cash Replenishment</a>
+              <a href="#" class="navCR">Cash Replenishment</a>
             </li>
-            <li><a href="#">Cash Processing Center</a></li>
-            <li><a href="#">Cash in Transit</a></li>
-            <li><a href="#">First Level Maintenance</a></li>
-            <li><a href="#">Cargo</a></li>
+            <li><a href="#" class="navCPC">Cash Processing Center</a></li>
+            <li><a href="#" class="navCIT">Cash in Transit</a></li>
+            <li><a href="#" class="navFLM">First Level Maintenance</a></li>
+            <li><a href="#" class="navCargo">Cargo</a></li>
           </ul>
           <!-- end of dropdown -->
         </li>
 
         <li>
           <a class="dropmenu" href="about-us.html"
-            >About Us <i class="fa fa-angle-down" aria-hidden="true"></i
+            ><span class="navAbout">About Us</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
           <ul class="dropDown sub-menu">
-            <li><a href="about-us.html">About Advantage SCM</a></li>
             <li>
-              <a href="company-management.html">Company Management</a>
+              <a href="about-us.html" class="navAboutAdv"
+                >About Advantage SCM</a
+              >
             </li>
-            <li><a href="#">Our Value</a></li>
-            <li><a href="#">Affiliate Companies</a></li>
+            <li>
+              <a href="company-management.html" class="navCompanyManagement"
+                >Company Management</a
+              >
+            </li>
+            <li><a href="#" class="navOurValue">Our Value</a></li>
+            <li>
+              <a href="#" class="navAffiliateCompanies">Affiliate Companies</a>
+            </li>
           </ul>
           <!-- end of dropdown -->
         </li>
-        <li><a href="career.html">Careers</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html" class="navCareer">Careers</a></li>
+        <li><a href="contact.html" class="navContact">Contact Us</a></li>
         <!-- end of li -->
       </ul>
       <!-- menu-wrapper -->
@@ -514,6 +546,7 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/dist/aos.js"></script>
+    <script src="assets/js/switchLang.js"></script>
     <script>
       $(document).on("ready", function () {
         // initialization of aos

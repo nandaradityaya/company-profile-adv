@@ -5018,7 +5018,7 @@ select {
   top: 0;
   width: 100%;
   height: 505px;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 .contact-section .contact-wrapper {
   padding: 85px 100px 55px;
@@ -11018,27 +11018,27 @@ select {
 }
 
 .vision-adv:nth-child(1) {
-  border-top-left-radius: 10px; /* Radius sudut atas kiri pada kolom pertama */
-  border-bottom-left-radius: 10px; /* Radius sudut bawah kiri pada kolom pertama */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .mision-adv:nth-child(2) {
-  border-top-right-radius: 10px; /* Radius sudut atas kanan pada kolom kedua */
-  border-bottom-right-radius: 10px; /* Radius sudut bawah kanan pada kolom kedua */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @media (max-width: 992px) {
   .vision-adv:nth-child(1) {
-      border-top-left-radius: 10px; /* Radius sudut atas kiri pada kolom pertama */
-      border-top-right-radius: 10px; /* Radius sudut atas kanan pada kolom pertama */
-      border-bottom-right-radius: 0; /* Menghapus radius sudut bawah kanan pada kolom pertama */
-      border-bottom-left-radius: 0; /* Menghapus radius sudut bawah kanan pada kolom pertama */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .mision-adv:nth-child(2) {
-      border-bottom-left-radius: 10px; /* Radius sudut bawah kiri pada kolom kedua */
-      border-top-left-radius: 0; /* Menghapus radius sudut atas kiri pada kolom kedua */
-      border-top-right-radius: 0; /* Menghapus radius sudut atas kiri pada kolom kedua */
-      border-bottom-right-radius: 10px; /* Radius sudut bawah kanan pada kolom kedua */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
   }
 }

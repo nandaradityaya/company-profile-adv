@@ -87,12 +87,14 @@
                 ></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">Cash Replenishment</a>
+                    <a href="#" class="navCR">Cash Replenishment</a>
                   </li>
-                  <li><a href="#">Cash Processing Center</a></li>
-                  <li><a href="#">Cash in Transit</a></li>
-                  <li><a href="#">First Level Maintenance</a></li>
-                  <li><a href="#">Cargo</a></li>
+                  <li><a href="#" class="navCPC">Cash Processing Center</a></li>
+                  <li><a href="#" class="navCIT">Cash in Transit</a></li>
+                  <li>
+                    <a href="#" class="navFLM">First Level Maintenance</a>
+                  </li>
+                  <li><a href="#" class="navCargo">Cargo</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -101,22 +103,34 @@
                   <i class="fa fa-angle-down" aria-hidden="true"></i
                 ></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Advantage SCM</a></li>
                   <li>
-                    <a href="company-management.html">Company Management</a>
+                    <a href="about-us.html" class="navAboutAdv"
+                      >About Advantage SCM</a
+                    >
                   </li>
-                  <li><a href="#">Our Value</a></li>
-                  <li><a href="#">Affiliate Companies</a></li>
+                  <li>
+                    <a
+                      href="company-management.html"
+                      class="navCompanyManagement"
+                      >Company Management</a
+                    >
+                  </li>
+                  <li><a href="#" class="navOurValue">Our Value</a></li>
+                  <li>
+                    <a href="#" class="navAffiliateCompanies"
+                      >Affiliate Companies</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li><a href="career.html" class="navCareer">Careers</a></li>
               <li><a href="contact.html" class="navContact">Contact Us</a></li>
               <li class="me-2 language-list">
-                <a href="#" data-lang="ID">ID</a>
+                <a type="button" data-lang="ID">ID</a>
               </li>
               <li class="me-2 divider-languange">|</li>
-              <li class="me-2 language-list active">
-                <a href="#" data-lang="EN">EN</a>
+              <li class="me-2 language-list">
+                <a type="button" data-lang="EN">EN</a>
               </li>
             </ul>
 
@@ -138,9 +152,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="content">
-              <h3>About Advantage</h3>
+              <h3 class="aboutAdv">About Advantage</h3>
 
-              <p>
+              <p class="descAboutAdvFirst">
                 Advantage SCM is a national private company engaged in cash
                 management and services, supported by professional and
                 experienced staff to provide the best service results to
@@ -148,7 +162,7 @@
                 2004 which has enabled us to always provide optimal service.
               </p>
 
-              <p>
+              <p class="descAboutAdvSecond">
                 Advantage SCM helps the banking industry and sub-clients in
                 optimizing operational business activities by preventing
                 duplication of money so as to increase productivity. We always
@@ -253,7 +267,7 @@
                 <span class="timer">36</span
                 ><span class="icon-plus-timer">+</span>
               </div>
-              <p>Branches</p>
+              <p class="branchesLang">Branches</p>
             </div>
           </div>
 
@@ -266,7 +280,7 @@
               <div class="count-description">
                 <span class="timer">19</span>
               </div>
-              <p>Outlets</p>
+              <p class="outletsLang">Outlets</p>
             </div>
           </div>
 
@@ -280,7 +294,7 @@
                 <span class="timer">100</span
                 ><span class="icon-plus-timer">+</span>
               </div>
-              <p>Employees</p>
+              <p class="employeesLang">Employees</p>
             </div>
           </div>
         </div>
@@ -297,14 +311,8 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h2>Our Services</h2>
+          <h2 class="titleOurServices mb-0">Our Services</h2>
           <div class="border-3"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore <br />
-            et dolore magna aliqua.
-          </p>
-          <a href="#" class="link">All Services</a>
         </div>
         <!-- section-title -->
 
@@ -416,7 +424,7 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h2 class="mb-0">Achievements</h2>
+          <h2 class="achievementsLang mb-0">Achievements</h2>
           <div class="border-3"></div>
         </div>
         <div
@@ -439,8 +447,8 @@
               </div>
               <div class="col-12 col-lg-6">
                 <div class="content">
-                  <h3>20+ Years Advantage</h3>
-                  <p>
+                  <h3 class="titleAchievementsOne">20+ Years Advantage</h3>
+                  <p class="subTitleAchievementsOne">
                     Expertise in the field of Cash Supply Chain Management with
                     experience as a PJPUR that is proven to be sustainable
                   </p>
@@ -463,8 +471,8 @@
               </div>
               <div class="col-12 col-lg-6">
                 <div class="content">
-                  <h3>BE Pro CuRe IT</h3>
-                  <p>
+                  <h3 class="titleAchievementsTwo">BE Pro CuRe IT</h3>
+                  <p class="subTitleAchievementsTwo">
                     Brand, Excellent, Professional, Customer Relation,
                     Integrity, Trust
                   </p>
@@ -487,8 +495,10 @@
               </div>
               <div class="col-12 col-lg-6">
                 <div class="content">
-                  <h3>The best PJPUR</h3>
-                  <p>Bank Indonesia Award as the best PJPUR in 2022</p>
+                  <h3 class="titleAchievementsThree">The best PJPUR</h3>
+                  <p class="subTitleAchievementsThree">
+                    Bank Indonesia Award as the best PJPUR in 2022
+                  </p>
                 </div>
               </div>
             </div>
@@ -529,7 +539,7 @@
           </a>
         </div>
         <h5
-          class="mt-4 font-16 weight-500 text-white"
+          class="mt-4 font-16 weight-500 text-white playVideo"
           style="position: relative; z-index: 1"
         >
           Play Video
@@ -538,136 +548,247 @@
     </section>
     <!-- video-section -->
 
-    <section class="multi-section section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="faq-content">
-              <h2>Frequently Asked Question</h2>
-
-              <div id="accordion" class="accordion-content">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <div>
-                  <p>
-                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna. Quis nostrud exerci
-                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat.
-                  </p>
-                </div>
-
-                <h3>Dolor sit amet, consectetuer adipiscing elit</h3>
-                <div>
-                  <p>
-                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna. Quis nostrud exerci
-                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat.
-                  </p>
-                </div>
-
-                <h3>Sed diam nonummy nibh euismod</h3>
-                <div>
-                  <p>
-                    consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna. Quis nostrud exerci
-                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- research-content -->
+    <div class="multi-section section-padding">
+      <div class="container text-center mb-5">
+        <div
+          class="section-title text-center"
+          data-aos="fade-up "
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <h2 class="ourClientsLang">Our Clients</h2>
+          <div class="border"></div>
+        </div>
+      </div>
+      <div class="carousel-custom mb-5">
+        <div class="carousel-wrapper-custom">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/1.png"
+              class="logo-client"
+              alt="client"
+            />
           </div>
-
-          <div class="col-md-6">
-            <div class="client-section">
-              <h3>Our Clients</h3>
-
-              <ul class="logo">
-                <li class="wow fadeIn mb-5">
-                  <img
-                    src="assets/images/client/1.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.2s">
-                  <img
-                    src="assets/images/client/2.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.3s">
-                  <img
-                    src="assets/images/client/3.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.4s">
-                  <img
-                    src="assets/images/client/4.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.5s">
-                  <img
-                    src="assets/images/client/5.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.6s">
-                  <img
-                    src="assets/images/client/6.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-
-                <li class="wow fadeIn mb-5" data-wow-delay="0.7s">
-                  <img
-                    src="assets/images/client/7.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-                <li class="wow fadeIn mb-5" data-wow-delay="0.8s">
-                  <img
-                    src="assets/images/client/8.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-                <li class="wow fadeIn mb-5" data-wow-delay="0.9s">
-                  <img
-                    src="assets/images/client/9.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-                <li class="wow fadeIn mb-5" data-wow-delay="1s">
-                  <img
-                    src="assets/images/client/10.png"
-                    alt="logo-client"
-                    width="120"
-                  />
-                </li>
-              </ul>
-            </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/2.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/3.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/4.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/5.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+        </div>
+        <div class="carousel-wrapper-custom">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/1.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/2.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/3.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/4.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/5.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+        </div>
+        <div class="carousel-wrapper-custom">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/1.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/2.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/3.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/4.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/5.png"
+              class="logo-client"
+              alt="client"
+            />
           </div>
         </div>
       </div>
-    </section>
-    <!-- multi-section -->
+
+      <div class="carousel-custom-left">
+        <div class="carousel-wrapper-custom-left">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/6.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/7.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/8.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/9.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/10.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+        </div>
+        <div class="carousel-wrapper-custom-left">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/6.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/7.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/8.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/9.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/10.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+        </div>
+        <div class="carousel-wrapper-custom-left">
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/6.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/7.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/8.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/9.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+          <div class="card-brand me-5">
+            <img
+              src="assets/images/client/10.png"
+              class="logo-client"
+              alt="client"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer-section">
       <div class="footer-container">
@@ -720,9 +841,9 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper">
-                <h3>About</h3>
+                <h3 class="footAbout">About</h3>
 
-                <p>
+                <p class="footDescAbout">
                   PT Advantage SCM ( Advantage ) is a leading cash management
                   company in Indonesia specialized on serving national and
                   multinational banks through its 36 full-branches and 19
@@ -763,13 +884,13 @@
               data-aos-easing="ease-in-out"
             >
               <div class="footer-wrapper last-wrapper">
-                <h3>Information</h3>
+                <h3 class="footInformation">Information</h3>
 
                 <ul class="wrapper-option clearfix">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="navHome">Home</a></li>
+                  <li><a href="#" class="navService">Blog</a></li>
+                  <li><a href="#" class="navCareer">Careers</a></li>
+                  <li><a href="#" class="navContact">Contact</a></li>
                 </ul>
                 <!-- wrapper-option -->
               </div>
