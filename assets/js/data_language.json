@@ -43,7 +43,10 @@
     "btnSubmitLang": "Submit",
     "titleCompanyManagement": "Company Management",
     "titleOurServices": "Our Services",
-    "playVideo": "Play Video"
+    "playVideo": "Play Video",
+    "presCom": "President Commisioner",
+    "indCom": "Independent Commisioner",
+    "commisionerLang": "Commissioner"
   },
   "ID": {
     "navHome": "Beranda",
@@ -89,6 +92,9 @@
     "btnSubmitLang": "Kirim",
     "titleCompanyManagement": "Manajemen Perusahaan",
     "titleOurServices": "Layanan Kami",
-    "playVideo": "Putar Video"
+    "playVideo": "Putar Video",
+    "presCom": "Presiden Komisaris",
+    "indCom": "Independen Komisaris",
+    "commisionerLang": "Komisaris"
   }
 }

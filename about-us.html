@@ -533,11 +533,22 @@
       <div class="container text-center">
         <h2 class="hidden">title</h2>
 
-        <div id="lightBox" class="video-icon wow zoomIn">
+        <!-- <div id="lightBox" class="video-icon wow zoomIn">
           <a href="http://youtu.be/XbmmI2OiMk0" data-poptrox="youtube,800x480"
             ><i class="fa fa-play" aria-hidden="true"></i>
           </a>
+        </div> -->
+
+        <!-- !!! VIDEO USING MODAL HERE !!! -->
+        <div
+          class="video-icon wow zoomIn cursor-pointer"
+          data-toggle="modal"
+          data-target="#modalVideoCompro"
+        >
+          <i class="fa fa-play" aria-hidden="true"></i>
         </div>
+        <!-- END -->
+
         <h5
           class="mt-4 font-16 weight-500 text-white playVideo"
           style="position: relative; z-index: 1"
@@ -911,6 +922,25 @@
       <!-- copy-right -->
     </footer>
     <!-- footer-section -->
+
+    <div
+      class="modal fade"
+      id="modalVideoCompro"
+      tabindex="-1"
+      aria-labelledby="modalVideoComproLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div
+          class="modal-content radius-10"
+          style="background-color: transparent; max-height: 361px"
+        >
+          <video controls="" class="radius-10">
+            <source src="assets/video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
 
     <!-- Off-Canvas View Only -->
     <span class="menu-toggle navbar visible-xs visible-sm"

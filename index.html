@@ -123,11 +123,11 @@
               <li><a href="career.html" class="navCareer">Careers</a></li>
               <li><a href="contact.html" class="navContact">Contact Us</a></li>
               <li class="me-2 language-list">
-                <a type="button" data-lang="ID">ID</a>
+                <a id="idLink" type="button" data-lang="ID">ID</a>
               </li>
               <li class="me-2 divider-languange">|</li>
               <li class="me-2 language-list">
-                <a type="button" data-lang="EN">EN</a>
+                <a id="enLink" type="button" data-lang="EN">EN</a>
               </li>
             </ul>
 
@@ -176,6 +176,7 @@
 
               <!-- LAYER NR. 3 -->
               <div
+                id="enLang"
                 class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5 subTitleOne"
                 data-x="right"
                 data-hoffset="0"
@@ -188,6 +189,21 @@
                 best Cash Supply Chain Management services at full speed to
                 <br />
                 support client operational activities.
+              </div>
+
+              <div
+                id="idLang"
+                class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5 subTitleOne"
+                data-x="right"
+                data-hoffset="0"
+                data-y="center"
+                data-voffset="75"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              >
+                Kegiatan Operasional PT. Keunggulan SCM dengan keamanan <br />
+                didukung oleh polisi untuk melindungi operasional kami
+                <br />
+                kegiatan.
               </div>
 
               <!-- LAYER NR. 4 -->
@@ -238,6 +254,7 @@
 
               <!-- LAYER NR. 3 -->
               <div
+                id="enLangTwo"
                 class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5"
                 data-x="right"
                 data-hoffset="0"
@@ -250,6 +267,23 @@
                 proper work accuracy based on Right Start so that the work
                 <br />
                 process is always accurate and correct from the start.
+              </div>
+
+              <div
+                id="idLangTwo"
+                class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5"
+                data-x="right"
+                data-hoffset="0"
+                data-y="center"
+                data-voffset="75"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              >
+                Keakuratan dalam Setiap Proses Kerja Dimiliki Setiap Staf
+                Profesional ketelitian <br />
+                kerja yang tepat berdasarkan Right Start sehingga pekerjaan
+                dapat dilakukan
+                <br />
+                prosesnya selalu akurat dan benar sejak awal.
               </div>
 
               <!-- LAYER NR. 4 -->
@@ -299,6 +333,7 @@
 
               <!-- LAYER NR. 3 -->
               <div
+                id="enLangThree"
                 class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5"
                 data-x="right"
                 data-hoffset="0"
@@ -310,6 +345,19 @@
                 supported by the police in order to protect our operational
                 <br />
                 activities.
+              </div>
+
+              <div
+                id="idLangThree"
+                class="tp-caption font-medium text-left sfb tp-resizeme letter-space-5"
+                data-x="right"
+                data-hoffset="0"
+                data-y="center"
+                data-voffset="75"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              >
+                Kegiatan Operasional PT. Keunggulan SCM dengan keamanan <br />
+                didukung oleh polisi untuk melindungi operasional kami kegiatan.
               </div>
 
               <!-- LAYER NR. 4 -->
@@ -360,6 +408,7 @@
 
               <!-- LAYER NR. 3 -->
               <div
+                id="enLangFour"
                 class="tp-caption font-medium sfb tp-resizeme letter-space-5"
                 data-x="right"
                 data-hoffset="0"
@@ -370,6 +419,21 @@
                 Eid Mubarak to the pillars of our family! love and guidance make
                 <br />
                 every celebration truly special.
+              </div>
+
+              <div
+                id="idLangFour"
+                class="tp-caption font-medium sfb tp-resizeme letter-space-5"
+                data-x="right"
+                data-hoffset="0"
+                data-y="center"
+                data-voffset="75"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              >
+                Idul Fitri untuk pilar keluarga kami! cinta dan bimbingan
+                membuat
+                <br />
+                setiap perayaan benar-benar istimewa.
               </div>
 
               <!-- LAYER NR. 4 -->
@@ -1210,6 +1274,68 @@
     <script src="assets/revolution/jquery.themepunch.revolution.min.js"></script>
     <script src="assets/revolution/jquery.themepunch.tools.min.js"></script>
     <script src="assets/dist/aos.js"></script>
+
+    <script>
+      // TITLE ONE
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("idLang").style.display = "none";
+      });
+
+      document.getElementById("idLink").addEventListener("click", function () {
+        document.getElementById("idLang").style.display = "block";
+        document.getElementById("enLang").style.display = "none";
+      });
+
+      document.getElementById("enLink").addEventListener("click", function () {
+        document.getElementById("idLang").style.display = "none";
+        document.getElementById("enLang").style.display = "block";
+      });
+
+      // TITLE TWO
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("idLangTwo").style.display = "none";
+      });
+
+      document.getElementById("idLink").addEventListener("click", function () {
+        document.getElementById("idLangTwo").style.display = "block";
+        document.getElementById("enLangTwo").style.display = "none";
+      });
+
+      document.getElementById("enLink").addEventListener("click", function () {
+        document.getElementById("idLangTwo").style.display = "none";
+        document.getElementById("enLangTwo").style.display = "block";
+      });
+
+      // TITLE THREE
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("idLangThree").style.display = "none";
+      });
+
+      document.getElementById("idLink").addEventListener("click", function () {
+        document.getElementById("idLangThree").style.display = "block";
+        document.getElementById("enLangThree").style.display = "none";
+      });
+
+      document.getElementById("enLink").addEventListener("click", function () {
+        document.getElementById("idLangThree").style.display = "none";
+        document.getElementById("enLangThree").style.display = "block";
+      });
+
+      // TITLE FOUR
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("idLangFour").style.display = "none";
+      });
+
+      document.getElementById("idLink").addEventListener("click", function () {
+        document.getElementById("idLangFour").style.display = "block";
+        document.getElementById("enLangFour").style.display = "none";
+      });
+
+      document.getElementById("enLink").addEventListener("click", function () {
+        document.getElementById("idLangFour").style.display = "none";
+        document.getElementById("enLangFour").style.display = "block";
+      });
+    </script>
 
     <script>
       $(document).on("ready", function () {
