@@ -6030,6 +6030,67 @@ select {
     padding: 8px 15px;
   }
 }
+
+.form-wrapper {
+  position: relative;
+}
+.form-wrapper .searchBar {
+  /* width: 100%; */
+  border-radius: 25px;
+  border: 0;
+  background: #ffffff;
+  box-shadow: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.signup-section
+  .contact-wrapper
+  .signupForm
+  .form-wrapper
+  .searchBar::placeholder {
+  color: #4e5860;
+}
+.form-wrapper .searchBar:focus {
+  border: 0;
+  outline: none;
+}
+@media only screen and (max-width: 767px) {
+  .form-wrapper .searchBar {
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .form-wrapper .searchBar {
+    padding: 8px 15px;
+  }
+}
+
+.form-wrapper .subscribeBtn.btn-primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #004994;
+  height: 100%;
+  padding: 0 50px;
+  margin: 0;
+}
+@media only screen and (max-width: 479px) {
+  .form-wrapper .subscribeBtn.btn-primary {
+    font-size: 15px;
+    padding: 0 25px;
+  }
+}
+
+.form-wrapper .subscribeBtn.btn-primary::before {
+  display: none;
+}
+
 .signup-section
   .contact-wrapper
   .signupForm

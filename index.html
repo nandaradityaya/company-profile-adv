@@ -46,8 +46,15 @@
     <!-- style-css -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/maps.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
   </head>
   <body class="homePageFive">
     <!-- start preloader -->
@@ -297,12 +304,12 @@
               >
                 <a
                   href="about-us.html"
-                  class="el-btn-regular slider-btn-left btn btn-primary"
+                  class="el-btn-regular slider-btn-left btn btn-primary btnAboutUsTwo"
                   >About Us</a
                 >
                 <a
                   href="contact.html"
-                  class="el-btn-regular btn btn-primary color-bg"
+                  class="el-btn-regular btn btn-primary color-bg btnContactUsTwo"
                   >Contact</a
                 >
               </div>
@@ -371,12 +378,12 @@
               >
                 <a
                   href="about-us.html"
-                  class="el-btn-regular slider-btn-left btn btn-primary"
+                  class="el-btn-regular slider-btn-left btn btn-primary btnAboutUsThree"
                   >About Us</a
                 >
                 <a
                   href="contact.html"
-                  class="el-btn-regular btn btn-primary color-bg"
+                  class="el-btn-regular btn btn-primary color-bg btnContactUsThree"
                   >Contact</a
                 >
               </div>
@@ -447,12 +454,12 @@
               >
                 <a
                   href="about-us.html"
-                  class="el-btn-regular slider-btn-left btn btn-primary"
+                  class="el-btn-regular slider-btn-left btn btn-primary btnAboutUsFour"
                   >About Us</a
                 >
                 <a
                   href="contact.html"
-                  class="el-btn-regular btn btn-primary color-bg"
+                  class="el-btn-regular btn btn-primary color-bg btnContactUsFour"
                   >Contact</a
                 >
               </div>
@@ -1073,6 +1080,154 @@
       </div>
     </div>
 
+    <div class="location">
+      <!-- Branch -->
+      <div class="container text-center">
+        <div
+          class="section-title text-center"
+          data-aos="fade-up "
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <h2 class="ourClientsLang">Our Branches</h2>
+          <div class="border"></div>
+        </div>
+      </div>
+      <div class="maps-container">
+        <!-- ID CANVAS MAPS -->
+        <div id="maps"></div>
+
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          class="btn btn-primary btn-gotomaps"
+          id="btn-gotomaps"
+          >Go to Maps</a
+        >
+      </div>
+      <div class="google-maps" data-goto="pages/controller"></div>
+
+      <div class="container mb-5">
+        <div class="searchBar">
+          <input
+            id="searchQueryInput"
+            type="text"
+            name="searchQueryInput"
+            placeholder="Search"
+            value=""
+          />
+          <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="#666666"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="container mb-5"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="row justify-content-center" id="result-default">
+          <!-- START LOOP -->
+          <div class="col-12 col-lg-4 p-2">
+            <div
+              class="card branch"
+              data-maps="EMBED MAPS"
+              data-url="<?= $branch['url_maps']; ?>"
+            >
+              <div class="card-body">
+                <h6 class="text-uppercase text-black font-16 weight-500 mb-2">
+                  Sumatera Utara
+                </h6>
+                <p class="text-muted font-16 mb-0">Advantage SCM Medan</p>
+                <ul class="branch-card">
+                  <li>
+                    <i class="fa fa-home font-22 text-primary"></i>
+                    <span class="font-16 text-black"
+                      ><span class="text-muted d-block">Kota Medan</span> <br />
+                      Jl. Seroja No.88A, Sunggal, Kec. Medan Sunggal. Kota
+                      Medan. Sumatera Utara 20122.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-phone font-22 text-primary"></i>
+                    <span class="font-16 text-black">06142565252</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2">
+            <div
+              class="card branch"
+              data-maps="EMBED MAPS"
+              data-url="<?= $branch['url_maps']; ?>"
+            >
+              <div class="card-body">
+                <h6 class="text-uppercase text-black font-16 weight-500 mb-2">
+                  Nusa Tenggara Timur
+                </h6>
+                <p class="text-muted font-16 mb-0">Advantage SCM Medan</p>
+                <ul class="branch-card">
+                  <li>
+                    <i class="fa fa-home font-22 text-primary"></i>
+                    <span class="font-16 text-black"
+                      ><span class="text-muted d-block">Kota Kupang</span>
+                      <br />
+                      Nefonaek, Kec. Kota Lama. Kota Kupang, Nusa Tenggara Timur
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone font-22 text-primary"></i>
+                    <span class="font-16 text-black">-</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2">
+            <div
+              class="card branch"
+              data-maps="EMBED MAPS"
+              data-url="<?= $branch['url_maps']; ?>"
+            >
+              <div class="card-body">
+                <h6 class="text-uppercase text-black font-16 weight-500 mb-2">
+                  Kalimantan Timur
+                </h6>
+                <p class="text-muted font-16 mb-0">Advantage SCM Medan</p>
+                <ul class="branch-card">
+                  <li>
+                    <i class="fa fa-home font-22 text-primary"></i>
+                    <span class="font-16 text-black"
+                      ><span class="text-muted d-block">Kota Samarinda</span>
+                      <br />
+                      Jl. Rambai No.8, Gn. Kelua, Kec. Samarinda Ulu. Kota
+                      Samarinda, Kalimantan Timur 75243
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone font-22 text-primary"></i>
+                    <span class="font-16 text-black">054162932220</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END LOOP -->
+        </div>
+      </div>
+      <!-- End Branch -->
+    </div>
+
     <footer class="footer-section">
       <div class="footer-container">
         <div class="container">
@@ -1442,5 +1597,75 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/switchLang.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@raruto/leaflet-gesture-handling@latest/dist/leaflet-gesture-handling.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        // Center point at Advantage SCM Cideng
+        const centerPoint = [-1.8359273, 120.4961404];
+        const mapsContainer = document.getElementById("maps");
+
+        // initial map
+        const Map = L.map(mapsContainer, {
+          // scrollWheelZoom: false, // Builtin func.
+          gestureHandling: true, // Unpkg GestureHandling
+          gestureHandlingOptions: {
+            text: {
+              touch: "Use two fingers to move the map",
+              scroll: "Use CTRL + Scroll to zoom the map",
+              scrollMac: "Use \u2318 + Scroll to zoom the map",
+            },
+          },
+        });
+
+        // initial osm tile url
+        const osmTileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        const attrib = "Advantage";
+        const osmTile = new L.TileLayer(osmTileUrl, {
+          minZoom: 2,
+          maxZoom: 20,
+          attribution: attrib,
+        });
+
+        function MapsLocation(cords, name, path_icon_name_w_extension) {
+          Map.setView(new L.LatLng(centerPoint[0], centerPoint[1]), 4.8);
+          Map.addLayer(osmTile);
+          var myicon = L.icon({
+            iconUrl: path_icon_name_w_extension,
+            iconSize: [35, 40],
+          });
+
+          L.marker([cords[0], cords[1]], {
+            icon: myicon,
+          })
+            .addTo(Map)
+            .bindPopup(name);
+        }
+
+        // Lat, Long
+        MapsLocation(
+          [3.581899, 98.6242836],
+          "Medan, Medan",
+          "assets/images/maps/location_blue.svg"
+        );
+        MapsLocation(
+          [-10.1532516, 123.6032219],
+          "Nama Cabang, Kota",
+          "assets/images/maps/location_blue.svg"
+        );
+        MapsLocation(
+          [-0.4715257, 117.1437009],
+          "Nama Cabang, Kota",
+          "assets/images/maps/location_red.svg"
+        );
+      });
+    </script>
   </body>
 </html>
