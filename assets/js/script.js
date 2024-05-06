@@ -299,11 +299,11 @@ jQuery(function ($) {
   }
 
   // -------------------------------------------------------------
-  //      Finance-Carousel-Slider
+  //      custom-carousel-Slider
   // -------------------------------------------------------------
 
-  if ($(".finance-carousel").length) {
-    $(".finance-carousel").owlCarousel({
+  if ($(".custom-carousel").length) {
+    $(".custom-carousel").owlCarousel({
       loop: true,
       autoplay: true,
       autoplayTimeout: 3000,
@@ -326,7 +326,7 @@ jQuery(function ($) {
           dots: false,
         },
         1000: {
-          items: 4,
+          items: 3,
         },
       },
     });

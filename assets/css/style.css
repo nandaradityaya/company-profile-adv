@@ -4728,22 +4728,22 @@ select {
     margin-bottom: 40px;
   }
 }
-.finance-section .finance-wrapper {
+.finance-section .custom-wrapper {
   position: relative;
   padding: 50px 0 65px;
   overflow: hidden;
 }
 @media only screen and (max-width: 991px) {
-  .finance-section .finance-wrapper {
+  .finance-section .custom-wrapper {
     padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .finance-section .finance-wrapper {
+  .finance-section .custom-wrapper {
     padding-bottom: 50px;
   }
 }
-.finance-section .finance-wrapper.wrapper-one::before {
+.finance-section .custom-wrapper.wrapper-one::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4781,7 +4781,7 @@ select {
     background-position: 100% 0;
   }
 }
-.finance-section .finance-wrapper.wrapper-two::before {
+.finance-section .custom-wrapper.wrapper-two::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4819,7 +4819,7 @@ select {
     background-position: 100% 0;
   }
 }
-.finance-section .finance-wrapper.wrapper-three::before {
+.finance-section .custom-wrapper.wrapper-three::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4857,17 +4857,17 @@ select {
     background-position: 100% 0;
   }
 }
-.finance-section .finance-wrapper:hover.wrapper-one::before,
-.finance-section .finance-wrapper:hover.wrapper-two::before,
-.finance-section .finance-wrapper:hover.wrapper-three::before {
+.finance-section .custom-wrapper:hover.wrapper-one::before,
+.finance-section .custom-wrapper:hover.wrapper-two::before,
+.finance-section .custom-wrapper:hover.wrapper-three::before {
   opacity: 1;
   visibility: visible;
 }
-.finance-section .finance-wrapper:hover .link {
+.finance-section .custom-wrapper:hover .link {
   color: #ffffff;
   background-color: #004994;
 }
-.finance-section .finance-wrapper .caption {
+.finance-section .custom-wrapper .caption {
   position: relative;
   width: 80px;
   height: 80px;
@@ -4881,10 +4881,10 @@ select {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.finance-section .finance-wrapper .caption img {
+.finance-section .custom-wrapper .caption img {
   padding-top: 18px;
 }
-.finance-section .finance-wrapper .caption .hover-icon {
+.finance-section .custom-wrapper .caption .hover-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -4900,23 +4900,23 @@ select {
   transition: 0.5s;
 }
 @media only screen and (max-width: 479px) {
-  .finance-section .finance-wrapper .caption {
+  .finance-section .custom-wrapper .caption {
     width: 50px;
     height: 50px;
   }
-  .finance-section .finance-wrapper .caption img {
+  .finance-section .custom-wrapper .caption img {
     width: 20px;
     padding-top: 15px;
   }
 }
-.finance-section .finance-wrapper:hover .caption {
+.finance-section .custom-wrapper:hover .caption {
   background-color: #ffffff;
 }
-.finance-section .finance-wrapper:hover .caption .hover-icon {
+.finance-section .custom-wrapper:hover .caption .hover-icon {
   opacity: 1;
   visibility: visible;
 }
-.finance-section .finance-wrapper h3 {
+.finance-section .custom-wrapper h3 {
   font-size: 24px;
   font-weight: 500;
   color: #0d1d36;
@@ -4929,22 +4929,22 @@ select {
   transition: 0.5s;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .finance-section .finance-wrapper h3 {
+  .finance-section .custom-wrapper h3 {
     font-size: 22px;
     margin: 32px 0 10px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .finance-section .finance-wrapper h3 {
+  .finance-section .custom-wrapper h3 {
     font-size: 18px;
     line-height: 27px;
     margin: 10px 0 5px;
   }
 }
-.finance-section .finance-wrapper:hover h3 {
+.finance-section .custom-wrapper:hover h3 {
   color: #ffffff;
 }
-.finance-section .finance-wrapper p {
+.finance-section .custom-wrapper p {
   font-size: 15px;
   line-height: 25px;
   color: #6a6a6a;
@@ -4958,22 +4958,22 @@ select {
   transition: 0.5s;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .finance-section .finance-wrapper p {
+  .finance-section .custom-wrapper p {
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .finance-section .finance-wrapper p {
+  .finance-section .custom-wrapper p {
     font-size: 14px;
     line-height: 25px;
     padding: 0 10px;
     margin-bottom: 25px;
   }
 }
-.finance-section .finance-wrapper:hover p {
+.finance-section .custom-wrapper:hover p {
   color: #ffffff;
 }
-.finance-section .finance-wrapper .link {
+.finance-section .custom-wrapper .link {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4983,7 +4983,7 @@ select {
   padding: 9px 28px;
 }
 @media only screen and (max-width: 479px) {
-  .finance-section .finance-wrapper .link {
+  .finance-section .custom-wrapper .link {
     font-size: 12px;
   }
 }
@@ -6141,35 +6141,35 @@ select {
   font-size: 18px;
   font-weight: 600;
 }
-.finance-service-section .finance-carousel .finance-wrapper {
+.custom-carousel .custom-wrapper {
   position: relative;
   box-shadow: 0 0 10px #e0e0e0;
   margin: 35px 5px 5px 5px;
 }
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .border
   .border-one,
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .border
   .border-two,
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .border
   .border-three,
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .border
   .border-four {
   opacity: 1;
   transform: scale(1);
 }
-.finance-service-section .finance-carousel .finance-wrapper .icon {
+.custom-carousel .custom-wrapper .icon {
   position: relative;
   width: 60px;
   height: 60px;
@@ -6180,38 +6180,34 @@ select {
   box-shadow: 0 2px 10px #cccccc;
   z-index: 5;
 }
-.finance-service-section .finance-carousel .finance-wrapper .icon img {
+.custom-carousel .custom-wrapper .icon img {
   /* width: auto; */
   padding: 15px 0;
   margin: 0 auto;
 }
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .wrapper-content
-  h4 {
+.custom-carousel .custom-wrapper .wrapper-content h4 {
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   margin: -17px 0 7px;
 }
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .wrapper-content
   h4
   a {
   color: #222222;
 }
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .wrapper-content
   h4
   a:hover {
   color: #ffffff !important;
 }
-.finance-service-section .finance-carousel .finance-wrapper .wrapper-content p {
+.custom-carousel .custom-wrapper .wrapper-content p {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -6219,18 +6215,10 @@ select {
   padding: 0 40px 28px;
   margin-bottom: 0;
 }
-.finance-service-section .finance-carousel .finance-wrapper .border .border-one,
-.finance-service-section .finance-carousel .finance-wrapper .border .border-two,
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .border
-  .border-three,
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .border
-  .border-four {
+.custom-carousel .custom-wrapper .border .border-one,
+.custom-carousel .custom-wrapper .border .border-two,
+.finance-service-section .custom-carousel .custom-wrapper .border .border-three,
+.finance-service-section .custom-carousel .custom-wrapper .border .border-four {
   position: absolute;
   background: #004994;
   opacity: 0;
@@ -6241,22 +6229,14 @@ select {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .border
-  .border-one {
+.custom-carousel .custom-wrapper .border .border-one {
   top: 0;
   left: 0;
   width: 100%;
   height: 1px;
   transform: scale(0, 1);
 }
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .border
-  .border-two {
+.custom-carousel .custom-wrapper .border .border-two {
   top: 0;
   right: 0;
   width: 1px;
@@ -6264,8 +6244,8 @@ select {
   transform: scale(1, 0);
 }
 .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .border
   .border-three {
   bottom: 0;
@@ -6274,27 +6254,23 @@ select {
   height: 1px;
   transform: scale(0, 1);
 }
-.finance-service-section
-  .finance-carousel
-  .finance-wrapper
-  .border
-  .border-four {
+.finance-service-section .custom-carousel .custom-wrapper .border .border-four {
   top: 0;
   left: 0;
   width: 1px;
   height: 100%;
   transform: scale(1, 0);
 }
-.finance-service-section .finance-carousel .owl-nav {
+.custom-carousel .owl-nav {
   margin-top: 40px;
 }
 @media only screen and (max-width: 767px) {
-  .finance-service-section .finance-carousel .owl-nav {
+  .custom-carousel .owl-nav {
     margin-top: 20px;
   }
 }
-.finance-service-section .finance-carousel .owl-nav .owl-prev,
-.finance-service-section .finance-carousel .owl-nav .owl-next {
+.custom-carousel .owl-nav .owl-prev,
+.custom-carousel .owl-nav .owl-next {
   width: 34px;
   height: 34px;
   line-height: 30px;
@@ -6309,13 +6285,13 @@ select {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.finance-service-section .finance-carousel .owl-nav .owl-prev:hover,
-.finance-service-section .finance-carousel .owl-nav .owl-next:hover {
+.custom-carousel .owl-nav .owl-prev:hover,
+.custom-carousel .owl-nav .owl-next:hover {
   background: #092a48;
   border: 2px solid #092a48;
 }
-.finance-service-section .finance-carousel .owl-nav .owl-prev i,
-.finance-service-section .finance-carousel .owl-nav .owl-next i {
+.custom-carousel .owl-nav .owl-prev i,
+.custom-carousel .owl-nav .owl-next i {
   font-size: 12px;
   color: #004994;
 }
@@ -9136,23 +9112,23 @@ select {
 .aboutPage .finance-service-section .section-title {
   margin-bottom: 13px;
 }
-.aboutPage .finance-service-section .finance-carousel .finance-wrapper {
+.aboutPage .finance-service-section .custom-carousel .custom-wrapper {
   box-shadow: none;
   border: 1px solid #e7e8e8;
   border-bottom: 0;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .wrapper-content {
   position: relative;
   z-index: 5;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .wrapper-content
   h4
   a {
@@ -9160,8 +9136,8 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .wrapper-content
   h4
   a:hover {
@@ -9169,34 +9145,34 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .wrapper-content
   p {
   color: #ffffff;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .hover
   .hover-one,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .hover
   .hover-two,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .hover
   .hover-three,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper:hover
+  .custom-carousel
+  .custom-wrapper:hover
   .hover
   .hover-four {
   opacity: 1;
@@ -9206,7 +9182,7 @@ select {
   -o-transform: scale(1);
   transform: scale(1);
 }
-.aboutPage .finance-service-section .finance-carousel .finance-wrapper .icon {
+.aboutPage .finance-service-section .custom-carousel .custom-wrapper .icon {
   background: transparent;
   box-shadow: none;
   transform: translateY(0);
@@ -9214,49 +9190,49 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .wrapper-content {
   border-bottom: 4px solid #004994;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .wrapper-content
   h4 {
   margin: 0 0 15px;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .wrapper-content
   p {
   padding: 0 35px 38px;
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-one,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-two,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-three,
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-four {
   position: absolute;
@@ -9278,8 +9254,8 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-one {
   top: 0;
@@ -9290,8 +9266,8 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-two {
   top: 25%;
@@ -9302,8 +9278,8 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-three {
   top: 49%;
@@ -9314,8 +9290,8 @@ select {
 }
 .aboutPage
   .finance-service-section
-  .finance-carousel
-  .finance-wrapper
+  .custom-carousel
+  .custom-wrapper
   .hover
   .hover-four {
   top: 74%;
