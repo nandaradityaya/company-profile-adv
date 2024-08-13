@@ -8819,7 +8819,7 @@ select {
 .homePageFive .header-section .navbar.sticky .navbar-collapse {
   width: auto;
 }
-.homePageFive .header-section .navbar .navbar-header .navbar-brand img {
+.navbar-index .header-section .navbar .navbar-header .navbar-brand img {
   padding: 24px 0;
   filter: invert(1) grayscale(100%) brightness(200%);
 }
@@ -8887,7 +8887,7 @@ select {
   color: #0d1d36;
 }
 
-.homePageFive
+.navbar-index
   .header-section
   .navbar
   .navbar-collapse
@@ -8897,7 +8897,7 @@ select {
   color: #ffffff;
 }
 
-.homePageFive
+.navbar-index
   .header-section
   .navbar.sticky
   .navbar-collapse

@@ -375,13 +375,18 @@ jQuery(function ($) {
               .find(".timer")
               .each(function () {
                 var $this = $(this);
+                var finalValue = parseInt($this.text());
+                $this.text("0");
                 $({ Counter: 0 }).animate(
-                  { Counter: $this.text() },
+                  { Counter: finalValue },
                   {
-                    duration: 2000,
+                    duration: 3000,
                     easing: "linear",
                     step: function () {
-                      $this.text(Math.ceil(this.Counter));
+                      $this.text(Math.floor(this.Counter));
+                    },
+                    complete: function () {
+                      $this.text(finalValue);
                     },
                   }
                 );

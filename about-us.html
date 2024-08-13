@@ -56,7 +56,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
-  <body class="subPage aboutPage">
+  <body class="homePageFive">
     <!-- start preloader -->
     <div id="preloader">
       <div class="preloader">
@@ -69,86 +69,95 @@
     </div>
     <!-- end preloader -->
 
-    <header class="header-section">
-      <nav class="navbar navbar-inverse hidden-sm hidden-xs">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"
-              ><img src="assets/images/logo-adv-2.png" alt="image" width="180"
-            /></a>
+    <div class="subPage">
+      <header class="header-section">
+        <nav class="navbar navbar-inverse hidden-sm hidden-xs">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="assets/images/logo-adv-2.png"
+                  alt="image"
+                  width="180"
+              /></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="index.html" class="navHome">Home</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#"
+                    ><span class="navService">Services</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="navCR">Cash Replenishment</a>
+                    </li>
+                    <li>
+                      <a href="#" class="navCPC">Cash Processing Center</a>
+                    </li>
+                    <li><a href="#" class="navCIT">Cash in Transit</a></li>
+                    <li>
+                      <a href="#" class="navFLM">First Level Maintenance</a>
+                    </li>
+                    <li><a href="#" class="navCargo">Cargo</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="about-us.html"
+                    ><span class="navAbout">About Us</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="about-us.html" class="navAboutAdv"
+                        >About Advantage SCM</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="company-management.html"
+                        class="navCompanyManagement"
+                        >Company Management</a
+                      >
+                    </li>
+                    <li><a href="#" class="navOurValue">Our Value</a></li>
+                    <li>
+                      <a href="#" class="navAffiliateCompanies"
+                        >Affiliate Companies</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="career.html" class="navCareer">Careers</a></li>
+                <li>
+                  <a href="contact.html" class="navContact">Contact Us</a>
+                </li>
+                <li class="me-2 language-list">
+                  <a type="button" data-lang="ID">ID</a>
+                </li>
+                <li class="me-2 divider-languange">|</li>
+                <li class="me-2 language-list">
+                  <a type="button" data-lang="EN">EN</a>
+                </li>
+              </ul>
+
+              <!-- <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/user-2.png" alt="" />Login</a
+                  >
+                </li>
+              </ul> -->
+            </div>
           </div>
-
-          <div class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="index.html" class="navHome">Home</a>
-              </li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span class="navService">Services</span>
-                  <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="navCR">Cash Replenishment</a>
-                  </li>
-                  <li><a href="#" class="navCPC">Cash Processing Center</a></li>
-                  <li><a href="#" class="navCIT">Cash in Transit</a></li>
-                  <li>
-                    <a href="#" class="navFLM">First Level Maintenance</a>
-                  </li>
-                  <li><a href="#" class="navCargo">Cargo</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="about-us.html"
-                  ><span class="navAbout">About Us</span>
-                  <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="about-us.html" class="navAboutAdv"
-                      >About Advantage SCM</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="company-management.html"
-                      class="navCompanyManagement"
-                      >Company Management</a
-                    >
-                  </li>
-                  <li><a href="#" class="navOurValue">Our Value</a></li>
-                  <li>
-                    <a href="#" class="navAffiliateCompanies"
-                      >Affiliate Companies</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li><a href="career.html" class="navCareer">Careers</a></li>
-              <li><a href="contact.html" class="navContact">Contact Us</a></li>
-              <li class="me-2 language-list">
-                <a type="button" data-lang="ID">ID</a>
-              </li>
-              <li class="me-2 divider-languange">|</li>
-              <li class="me-2 language-list">
-                <a type="button" data-lang="EN">EN</a>
-              </li>
-            </ul>
-
-            <!-- <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#"
-                  ><img src="assets/images/user-2.png" alt="" />Login</a
-                >
-              </li>
-            </ul> -->
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
     <!-- header-section -->
 
     <section class="about-office-section section-padding-custom">
@@ -298,7 +307,7 @@
     </section>
 
     <section class="counting-section section-padding">
-      <div class="container">
+      <div class="container-custom">
         <h2 class="hidden">counting-title</h2>
 
         <div class="counting-pusher">
