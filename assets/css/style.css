@@ -11115,12 +11115,13 @@ select {
 
 .bg-service-detail {
   position: relative;
-  background-image: url("../images/bg-service-detail.jpg");
+  background-image: url("../images/header-service-detail.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
   z-index: 1;
+  height: 471px;
 }
 
 .bg-service-detail::before {
@@ -11183,10 +11184,10 @@ select {
 }
 
 .swiper-container {
-  position: relative; 
+  position: relative;
   width: 100%;
-  height: 50vh; 
-  overflow: hidden; 
+  height: 50vh;
+  overflow: hidden;
 }
 
 .swiper-button-next,
@@ -11198,8 +11199,8 @@ select {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(255, 255, 255, 100); 
-  border-radius: 50%; 
+  background: rgba(255, 255, 255, 100);
+  border-radius: 50%;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -11208,14 +11209,37 @@ select {
 }
 
 .swiper-button-next {
-  right: 10px; 
+  right: 10px;
 }
 
 .swiper-button-prev {
-  left: 10px; 
+  left: 10px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 16px !important;
+}
+
+.text-left-content {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.text-center-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-right-content {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
 }
