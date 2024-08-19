@@ -2975,6 +2975,7 @@ select {
   text-align: left;
   padding-bottom: 25px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
 }
 .project-section .project-wrapper .hover-view:before {
