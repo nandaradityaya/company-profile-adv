@@ -165,7 +165,19 @@ ul {
 ul li {
   margin: 0;
   padding: 0;
+  /* list-style: none; */
+}
+
+.location li {
   list-style: none;
+}
+
+.wrapper-option li {
+  list-style: none;
+}
+
+.core-values ul {
+  padding-left: 18px;
 }
 
 /* =========================================================
@@ -11243,4 +11255,17 @@ select {
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
+}
+
+.milestone-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
